@@ -1,5 +1,5 @@
 ---
-baseurl: "http://blog.hugoexample.com/"
-title: "Hugo Example Blog"
+baseurl: "http://jsegura.github.io/blog/"
+title: "my blog"
 canonifyurls: true
 ---
