@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Example on my blog </title>
-    <link>http://javiersegura.net/tags/example/index.xml</link>
+    <link>http://jsegura.github.io/blog/tags/example/index.xml</link>
     <language>en-US</language>
     <author>Enthusiastic Hugo User</author>
     <rights>Copyright (c) 2014, Enthusiastic Hugo User; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Another Hugo Post</title>
-      <link>http://javiersegura.net/post/another-post</link>
+      <link>http://jsegura.github.io/blog/post/another-post</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 UTC</pubDate>
       <author>Enthusiastic Hugo User</author>
-      <guid>http://javiersegura.net/post/another-post</guid>
+      <guid>http://jsegura.github.io/blog/post/another-post</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;TOML, YAML, JSON - Oh my!&lt;/h2&gt;
@@ -60,10 +60,10 @@ name the file &lt;code&gt;config.yaml&lt;/code&gt;, &lt;code&gt;config.toml&lt;/
     
     <item>
       <title>Hello Hugo!</title>
-      <link>http://javiersegura.net/post/hello-hugo</link>
+      <link>http://jsegura.github.io/blog/post/hello-hugo</link>
       <pubDate>Tue, 08 Apr 2014 00:00:00 UTC</pubDate>
       <author>Enthusiastic Hugo User</author>
-      <guid>http://javiersegura.net/post/hello-hugo</guid>
+      <guid>http://jsegura.github.io/blog/post/hello-hugo</guid>
       <description>
 
 &lt;p&gt;Hello from Hugo! If you&amp;rsquo;re reading this in your browser, good job! The file &lt;code&gt;content/post/hello-hugo.md&lt;/code&gt; has been
