@@ -2,7 +2,7 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
       <title>Configuration on my blog </title>
-    <link>http://blog.hugoexample.com/categories/configuration/index.xml</link>
+    <link>http://jsegura.github.io/blog/categories/configuration/index.xml</link>
     <language>en-US</language>
     <author>Enthusiastic Hugo User</author>
     <rights>Copyright (c) 2014, Enthusiastic Hugo User; all rights reserved.</rights>
@@ -10,10 +10,10 @@
     
     <item>
       <title>Another Hugo Post</title>
-      <link>http://blog.hugoexample.com/post/another-post</link>
+      <link>http://jsegura.github.io/blog/post/another-post</link>
       <pubDate>Wed, 09 Apr 2014 00:00:00 UTC</pubDate>
       <author>Enthusiastic Hugo User</author>
-      <guid>http://blog.hugoexample.com/post/another-post</guid>
+      <guid>http://jsegura.github.io/blog/post/another-post</guid>
       <description>
 
 &lt;h2 id=&#34;toc_0&#34;&gt;TOML, YAML, JSON - Oh my!&lt;/h2&gt;
