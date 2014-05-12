@@ -6,7 +6,87 @@
     <language>en-US</language>
     <author>Javier Segura</author>
     <rights>Copyright (c) 2014, Javier Segura; all rights reserved.</rights>
-    <updated>Mon, 12 May 2014 00:00:00 UTC</updated>
+    <updated>Tue, 13 May 2014 00:00:00 UTC</updated>
+    
+    <item>
+      <title>Websockets</title>
+      <link>http://javiersegura.net/post/websockets</link>
+      <pubDate>Tue, 13 May 2014 00:00:00 UTC</pubDate>
+      <author>Javier Segura</author>
+      <guid>http://javiersegura.net/post/websockets</guid>
+      <description>&lt;p&gt;A &lt;strong&gt;Websocket&lt;/strong&gt; is a protocol that provides dual-channel communication between web servers and web browsers. It uses the &lt;em&gt;HTTP&lt;/em&gt; protocol as a handshake but it has its own &lt;em&gt;TCP-based&lt;/em&gt; protocol.
+This is useful for enabling a better interaction between your web users, it&amp;rsquo;s a real-timeand once the request is started by the client, the server can send information over the websocket without the requisition from the client.&lt;/p&gt;
+
+&lt;p&gt;A demo site &lt;a href=&#34;http://www.websocket.org/echo.html&#34;&gt;Echo test&lt;/a&gt; is available using &lt;code&gt;ws://echo.websocket.org&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;We can see how the communication is started looking at the network traffic using your preferred tool (in my case &lt;em&gt;Developer tools&lt;/em&gt; from Chrome is more than enough).&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;p&gt;This is the workflow in the Echo test example:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Client initiaties the connection:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;Cache-Control:no-cache
+Connection:Upgrade
+Cookie:__utma=9925811.560021929.1398795440.1398795440.1399893753.2; __utmb=9925811.2.10.1399893753; __utmc=9925811; __utmz=9925811.1399893753.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)
+Host:echo.websocket.org
+Origin:http://www.websocket.org
+Pragma:no-cache
+Sec-WebSocket-Extensions:permessage-deflate; client_max_window_bits, x-webkit-deflate-frame
+Sec-WebSocket-Key:j6MZV0bC4TBsmQHmnlsEyw==
+Sec-WebSocket-Version:13
+Upgrade:websocket
+User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/34.0.1847.131 Safari/537.36
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Server response:&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;pre&gt;&lt;code&gt;Access-Control-Allow-Credentials:true
+Access-Control-Allow-Headers:x-websocket-protocol
+Access-Control-Allow-Headers:x-websocket-version
+Access-Control-Allow-Headers:x-websocket-extensions
+Access-Control-Allow-Headers:authorization
+Access-Control-Allow-Headers:content-type
+Access-Control-Allow-Origin:http://www.websocket.org
+Connection:Upgrade
+Date:Mon, 12 May 2014 11:25:46 GMT
+Sec-WebSocket-Accept:Psgr6cQUXMgP1tz5StleqjOWtpE=
+Server:Kaazing Gateway
+Upgrade:WebSocket
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;After that we have a fully working websocket. The browser has a permanent connection to the webserver as we can see using netstat:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;% nslookup echo.websocket.org
+Server:     192.168.1.1
+Address:    192.168.1.1#53
+
+Non-authoritative answer:
+echo.websocket.org  canonical name = echo-kaazing.websocket.org.
+echo-kaazing.websocket.org  canonical name = websocket.org.
+Name:   websocket.org
+Address: 174.129.224.73
+
+% netstat -tn | grep 174.129.224.73
+tcp4       0      0  192.168.1.7.50195      174.129.224.73.80      ESTABLISHED
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;If we want to use websockets in our javascript application we can use the example of &lt;a href=&#34;http://www.websocket.org/aboutwebsocket.html&#34;&gt;websocket&lt;/a&gt;:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;// Code from websocket.org
+var myWebSocket = new WebSocket(&amp;quot;ws://www.websockets.org&amp;quot;); 
+myWebSocket.onopen = function(evt) { alert(&amp;quot;Connection open ...&amp;quot;); }; myWebSocket.onmessage = function(evt) { alert( &amp;quot;Received Message: &amp;quot; + evt.data); }; 
+myWebSocket.onclose = function(evt) { alert(&amp;quot;Connection closed.&amp;quot;); }; 
+myWebSocket.send(&amp;quot;Hello WebSockets!&amp;quot;); myWebSocket.close();
+
+&lt;/code&gt;&lt;/pre&gt;
+</description>
+    </item>
     
     <item>
       <title>Hello Hugo!</title>
