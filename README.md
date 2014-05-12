@@ -10,6 +10,6 @@ Features
 - Indexes for `tags` and `categories`
 - Post information block, with links for all `tags` and `categories` post belongs to
 - [Bootstrap 3](http://getbootstrap.com/) ready
-  - Currently using the Yeti theme from http://bootswatch.com/
+  - Currently using the Readable theme from http://bootswatch.com/
 - Disqus integration
 - Google analytics
