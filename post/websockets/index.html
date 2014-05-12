@@ -16,6 +16,10 @@
     <link href="http://javiersegura.net/css/font-awesome.css" rel="stylesheet">
     <link href="http://javiersegura.net/css/custom.css" rel="stylesheet">
     
+
+ <link rel="stylesheet" href="https://yandex.st/highlightjs/8.0/styles/default.min.css">
+ <script src="https://yandex.st/highlightjs/8.0/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
 </head>
 <body>
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
@@ -58,7 +62,7 @@ This is useful for enabling a better interaction between your web users, it&rsqu
 <li>Client initiaties the connection:</li>
 </ul>
 
-<pre><code>Cache-Control:no-cache
+<pre><code class="http">Cache-Control:no-cache
 Connection:Upgrade
 Cookie:__utma=9925811.560021929.1398795440.1398795440.1399893753.2; __utmb=9925811.2.10.1399893753; __utmc=9925811; __utmz=9925811.1399893753.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)
 Host:echo.websocket.org
@@ -75,7 +79,7 @@ User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KH
 <li>Server response:</li>
 </ul>
 
-<pre><code>Access-Control-Allow-Credentials:true
+<pre><code class="http">Access-Control-Allow-Credentials:true
 Access-Control-Allow-Headers:x-websocket-protocol
 Access-Control-Allow-Headers:x-websocket-version
 Access-Control-Allow-Headers:x-websocket-extensions
@@ -91,7 +95,7 @@ Upgrade:WebSocket
 
 <p>After that we have a fully working websocket. The browser has a permanent connection to the webserver as we can see using netstat:</p>
 
-<pre><code>% nslookup echo.websocket.org
+<pre><code class="bash">% nslookup echo.websocket.org
 Server:     192.168.1.1
 Address:    192.168.1.1#53
 
@@ -107,12 +111,12 @@ tcp4       0      0  192.168.1.7.50195      174.129.224.73.80      ESTABLISHED
 
 <p>If we want to use websockets in our javascript application we can use the example of <a href="http://www.websocket.org/aboutwebsocket.html">websocket</a>:</p>
 
-<pre><code>// Code from websocket.org
+<pre><code class="javascript">// Code from websocket.org
 var myWebSocket = new WebSocket(&quot;ws://www.websockets.org&quot;); 
-myWebSocket.onopen = function(evt) { alert(&quot;Connection open ...&quot;); }; myWebSocket.onmessage = function(evt) { alert( &quot;Received Message: &quot; + evt.data); }; 
+myWebSocket.onopen = function(evt) { alert(&quot;Connection open ...&quot;); };
+myWebSocket.onmessage = function(evt) { alert( &quot;Received Message: &quot; + evt.data); }; 
 myWebSocket.onclose = function(evt) { alert(&quot;Connection closed.&quot;); }; 
 myWebSocket.send(&quot;Hello WebSockets!&quot;); myWebSocket.close();
-
 </code></pre>
 
             </div>

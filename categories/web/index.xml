@@ -29,7 +29,7 @@ This is useful for enabling a better interaction between your web users, it&amp;
 &lt;li&gt;Client initiaties the connection:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;Cache-Control:no-cache
+&lt;pre&gt;&lt;code class=&#34;http&#34;&gt;Cache-Control:no-cache
 Connection:Upgrade
 Cookie:__utma=9925811.560021929.1398795440.1398795440.1399893753.2; __utmb=9925811.2.10.1399893753; __utmc=9925811; __utmz=9925811.1399893753.2.2.utmcsr=google|utmccn=(organic)|utmcmd=organic|utmctr=(not%20provided)
 Host:echo.websocket.org
@@ -46,7 +46,7 @@ User-Agent:Mozilla/5.0 (Macintosh; Intel Mac OS X 10_9_2) AppleWebKit/537.36 (KH
 &lt;li&gt;Server response:&lt;/li&gt;
 &lt;/ul&gt;
 
-&lt;pre&gt;&lt;code&gt;Access-Control-Allow-Credentials:true
+&lt;pre&gt;&lt;code class=&#34;http&#34;&gt;Access-Control-Allow-Credentials:true
 Access-Control-Allow-Headers:x-websocket-protocol
 Access-Control-Allow-Headers:x-websocket-version
 Access-Control-Allow-Headers:x-websocket-extensions
@@ -62,7 +62,7 @@ Upgrade:WebSocket
 
 &lt;p&gt;After that we have a fully working websocket. The browser has a permanent connection to the webserver as we can see using netstat:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;% nslookup echo.websocket.org
+&lt;pre&gt;&lt;code class=&#34;bash&#34;&gt;% nslookup echo.websocket.org
 Server:     192.168.1.1
 Address:    192.168.1.1#53
 
@@ -78,12 +78,12 @@ tcp4       0      0  192.168.1.7.50195      174.129.224.73.80      ESTABLISHED
 
 &lt;p&gt;If we want to use websockets in our javascript application we can use the example of &lt;a href=&#34;http://www.websocket.org/aboutwebsocket.html&#34;&gt;websocket&lt;/a&gt;:&lt;/p&gt;
 
-&lt;pre&gt;&lt;code&gt;// Code from websocket.org
+&lt;pre&gt;&lt;code class=&#34;javascript&#34;&gt;// Code from websocket.org
 var myWebSocket = new WebSocket(&amp;quot;ws://www.websockets.org&amp;quot;); 
-myWebSocket.onopen = function(evt) { alert(&amp;quot;Connection open ...&amp;quot;); }; myWebSocket.onmessage = function(evt) { alert( &amp;quot;Received Message: &amp;quot; + evt.data); }; 
+myWebSocket.onopen = function(evt) { alert(&amp;quot;Connection open ...&amp;quot;); };
+myWebSocket.onmessage = function(evt) { alert( &amp;quot;Received Message: &amp;quot; + evt.data); }; 
 myWebSocket.onclose = function(evt) { alert(&amp;quot;Connection closed.&amp;quot;); }; 
 myWebSocket.send(&amp;quot;Hello WebSockets!&amp;quot;); myWebSocket.close();
-
 &lt;/code&gt;&lt;/pre&gt;
 </description>
     </item>
