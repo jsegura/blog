@@ -4,15 +4,15 @@
       <title>Recent Content on my blog </title>
     <link>http://javiersegura.net/index.xml</link>
     <language>en-US</language>
-    <author>Enthusiastic Hugo User</author>
-    <rights>Copyright (c) 2014, Enthusiastic Hugo User; all rights reserved.</rights>
+    <author>Javier Segura</author>
+    <rights>Copyright (c) 2014, Javier Segura; all rights reserved.</rights>
     <updated>Mon, 12 May 2014 00:00:00 UTC</updated>
     
     <item>
       <title>Hello Hugo!</title>
       <link>http://javiersegura.net/post/hello-hugo</link>
       <pubDate>Mon, 12 May 2014 00:00:00 UTC</pubDate>
-      <author>Enthusiastic Hugo User</author>
+      <author>Javier Segura</author>
       <guid>http://javiersegura.net/post/hello-hugo</guid>
       <description>&lt;p&gt;Hello from Hugo! I decided to start blogging again and I hope this is not one of the countless times I tried.&lt;/p&gt;
 
