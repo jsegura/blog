@@ -6,17 +6,7 @@
     <language>en-US</language>
     <author>Javier Segura</author>
     <rights>Copyright (c) 2014, Javier Segura; all rights reserved.</rights>
-    <updated>Tue, 20 May 2014 00:00:00 UTC</updated>
-    
-    <item>
-      <title>Websockets in go</title>
-      <link>http://javiersegura.net/post/go-websockets</link>
-      <pubDate>Tue, 20 May 2014 00:00:00 UTC</pubDate>
-      <author>Javier Segura</author>
-      <guid>http://javiersegura.net/post/go-websockets</guid>
-      <description>&lt;p&gt;After making a &lt;a href=&#34;/post/websockets&#34;&gt;simple introduction of websockets&lt;/a&gt; I&amp;rsquo;m going to implement a websocket server in &lt;a href=&#34;http://golang.org&#34;&gt;go&lt;/a&gt;.&lt;/p&gt;
-</description>
-    </item>
+    <updated>Tue, 13 May 2014 00:00:00 UTC</updated>
     
     <item>
       <title>Websockets</title>
