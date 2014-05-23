@@ -1,0 +1,9 @@
+{
+  "baseurl": "http://javiersegura.net/",
+  "title": "my blog",
+  "canonifyurls": true,
+  "params": {
+    "Github": "jsegura",
+    "Twitter": "jsegura"
+  }
+}
